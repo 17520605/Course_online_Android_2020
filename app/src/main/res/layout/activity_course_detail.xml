@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redbg"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBcoursedetail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/redbg1"
+        app:title="Detail course"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/DetailCourse_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name course"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                app:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/DetailCourse_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/picturenotavailable" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:text="Number of participants">
+
+            </TextView>
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:outlineProvider="background"
+                    android:background="@drawable/f5a44376b88a4b68f48eb0686c602555"
+                    android:scaleType="fitXY">
+                </ImageView>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="60"
+                        android:textSize="50sp"
+                        android:textColor="#FFFF"
+                        android:layout_marginTop="-5dp"
+                        android:layout_gravity="center"/>
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Turnover of the course"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#FFFF"
+                android:textSize="20dp">
+            </TextView>
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:outlineProvider="background"
+                    android:background="@drawable/untitled_2"
+                    android:scaleType="fitXY">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="12,000,000 Đ"
+                    android:textSize="50sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#FFFF"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+            <Button
+                android:id="@+id/Detailcourse_updatecourseBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_btn2"
+                android:text="UPDATE COURSE"
+                android:textAllCaps="true"
+                android:textColor="@color/redbg" />
+            <Button
+                android:id="@+id/Detailcourse_deletecourseBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_btn2"
+                android:text="DELETE COURSE"
+                android:textAllCaps="true"
+                android:textColor="@color/redbg" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

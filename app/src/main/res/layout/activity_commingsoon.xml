@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/red"
+            app:title="History buy course"
+            android:id="@+id/TBhistorycourse"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="History buy courses"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The function is in development"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank3">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank2">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank1">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank3">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank2">
+            </ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="150dp"
+                android:background="@drawable/cardbank1">
+            </ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+

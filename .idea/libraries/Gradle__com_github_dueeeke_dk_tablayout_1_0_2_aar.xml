@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dueeeke:dk-tablayout:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f0e8a1c97eab035ea02279b0aa4367/jetified-dk-tablayout-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f0e8a1c97eab035ea02279b0aa4367/jetified-dk-tablayout-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04f0e8a1c97eab035ea02279b0aa4367/jetified-dk-tablayout-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea42bfd2ddcb73e2f367dcb04a5f4906/jetified-dk-tablayout-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea42bfd2ddcb73e2f367dcb04a5f4906/jetified-dk-tablayout-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea42bfd2ddcb73e2f367dcb04a5f4906/jetified-dk-tablayout-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dueeeke/dk-tablayout/1.0.2/6d2df6992b0329e0172473776ed2f16d13447af/dk-tablayout-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dueeeke/dk-tablayout/1.0.2/87f071c38afbab2497f0bd0222db3982904fad0a/dk-tablayout-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_attachment"
+        android:icon="@drawable/icons_add"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/menu_image"
+        android:icon="@drawable/icons8_edit_48px_1"
+        android:title="Edit" />
+
+    <item
+        android:id="@+id/menu_place"
+        android:icon="@drawable/icons8_ask_question_48px_1"
+        android:title="Question" />
+
+    <item
+        android:id="@+id/menu_emoticon"
+        android:icon="@drawable/icons8_delete_bin_100px_1"
+        android:title="Delete" />
+
+
+</menu>

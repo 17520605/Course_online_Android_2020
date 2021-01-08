@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/red"
+                android:id="@+id/TBupdateinfor"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                >
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/accountsetting_avatar_img"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/noavatar1"
+                    android:layout_marginTop="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.057"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:civ_border_width="1dp" />
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/accountsetting_avatar_img"
+                    app:layout_constraintEnd_toEndOf="@+id/accountsetting_avatar_img"
+                    app:layout_constraintStart_toStartOf="@+id/accountsetting_avatar_img"
+                    app:layout_constraintTop_toTopOf="@+id/accountsetting_avatar_img"
+                    app:srcCompat="@drawable/icons8_add_100px" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:text="FullName"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/accountsetting_avatar_img" />
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="Nguyễn Hữu Minh Khai"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Phone"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_name" />
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="0969888999"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone" />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Email"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="Nguyenhuuminhkhai@gmail.com"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Address"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="Thu Duc - Ho Chi Minh - Viet Nam"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Description"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_address" />
+
+                <EditText
+                    android:id="@+id/input_description"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="Student"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Gender"
+                    android:textColor="@color/font_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_description" />
+                <EditText
+                    android:id="@+id/input_gender"
+                    android:layout_width="370dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/form_setting"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:hint="Nam"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="307dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_btn"
+                    android:text="Update information"
+                    android:textColor="#fff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_gender" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

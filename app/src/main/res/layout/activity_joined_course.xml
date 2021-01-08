@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f4f4f4"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/redbg1"
+            app:title="List lesson"
+            android:id="@+id/TBlistlesson"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/image1"
+                android:id="@+id/CourseJoined_Image"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:alpha="0.6"
+                />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/CourseJoined_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/antic"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Lập trình Java từ căn bản đến nâng cao"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        app:fontFamily="@font/open_sans_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-30dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content">
+
+                                <ProgressBar
+                                    android:id="@+id/CourseJoined_ProgressBar"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="60"
+                                    android:progressDrawable="@drawable/join_course_circular"
+                                    android:secondaryProgress="100" />
+
+                                <TextView
+                                    android:id="@+id/CourseJoined_Percent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="-85dp"
+                                    android:text="60%"
+                                    android:textColor="#fff"
+                                    android:textSize="25sp" />
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/CourseJoined_LearnBtn"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="1dp"
+                                android:background="@drawable/bg_btn1"
+                                android:ellipsize="end"
+                                android:layout_marginLeft="40dp"
+                                android:maxLines="2"
+                                android:outlineSpotShadowColor="#050101"
+                                android:text="Lean now"
+                                android:textColor="#ffff"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/icon_male"
+                                    ></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="40 student"
+                                    android:textColor="#fff"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/icon_videoplaylist"
+                                    ></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="10 video"
+                                    android:textColor="#fff"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:background="@drawable/activity_course_detail_border_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Lesson"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans_bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/CourseJoined_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

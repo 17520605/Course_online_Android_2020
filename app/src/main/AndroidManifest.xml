@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tutorial_v1">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconcourse"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/iconcourse"
+        android:theme="@style/AppTheme">
+        <activity android:name="Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Activity.ForgotPasswordActivity"></activity>
+        <activity android:name="Activity.UserInfoActivity"></activity>
+        <activity android:name="Activity.RegisterActivity"></activity>
+        <activity android:name="Activity.PaymentActivity"></activity>
+        <activity android:name="Activity.HomeActivity"></activity>
+        <activity android:name="Activity.ChangePasswordActivity"></activity>
+        <activity android:name="Activity.ChangePasswordSuccessfulActivity"></activity>
+        <activity android:name="Activity.ChangeAvatarActivity"></activity>
+        <activity android:name="Activity.GetStartedActivity"></activity>
+        <activity android:name="Activity.AccountSettingActivity"></activity>
+        <activity android:name="Activity.ActiveAccountActivity"></activity>
+        <activity android:name="Activity.CourseActivity"></activity>
+        <activity android:name="Activity.CategoryActivity"></activity>
+        <activity android:name="Activity.ListCourseJoinedActivity"></activity>
+        <activity android:name="Activity.CourseJoinedActivity"></activity>
+        <activity android:name="Activity.ListCourseCreatedActivity"></activity>
+        <activity android:name="Activity.LessonActivity"></activity>
+        <activity android:name="Activity.UpdateCourseActivity"></activity>
+        <activity android:name="Activity.ContactSupportActivity"></activity>
+        <activity android:name="Activity.CreateLessonActivity"></activity>
+        <activity android:name="Activity.ListLessonCreatedActivity"></activity>
+        <activity android:name="Activity.CreateCourseActivity"></activity>
+        <activity android:name="Activity.RecoveryPasswordActivity"></activity>
+        <activity android:name="Activity.UpdateLessonActivity"></activity>
+        <activity android:name="Activity.CreateTestActivity"></activity>
+        <activity android:name="Activity.CreateQuestionActivity"></activity>
+        <activity android:name="Activity.ListQuestionCreatedActivity"></activity>
+        <activity android:name="Activity.ListTestCreatedActivity"></activity>
+        <activity android:name="Activity.HistoryActivity"></activity>
+        <activity android:name="Activity.UpdateTestActivity"></activity>
+        <activity android:name="Activity.CourseDetailActivity"></activity>
+        <activity android:name="Activity.ListLessonTestActivity"></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

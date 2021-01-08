@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f4f4f4"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/CourseOverview_Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/image1"
+                android:id="@+id/CourseOverview_Image"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:alpha="0.6"
+                />
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/CourseOverview_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:fontFamily="@font/antic"
+                        android:text="Lập trình Java từ căn bản đến nâng cao"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:maxLines="2"
+                        app:fontFamily="@font/open_sans_bold" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:fontFamily="@font/antic"
+                        android:text="Học từ cơ bản đến nâng cao "
+                        android:textColor="@color/white"
+                        android:id="@+id/CourseOverview_Goal"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/activity_course_detail_detail_border1"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/activity_course_detail_ic_stars">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_gravity="center"
+                            android:text="Ranking:"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:fontFamily="@font/open_sans_semibold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/CourseOverview_Rank"
+                            android:layout_marginLeft="4dp"
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:fontFamily="@font/open_sans_semibold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/activity_course_detail_detail_border1"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icon_male">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_gravity="center"
+                                android:text="Author:"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                app:fontFamily="@font/open_sans_semibold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/CourseOverview_Author"
+                                android:layout_marginLeft="2dp"
+                                android:layout_gravity="center"
+                                android:text="Nguyễn Hữu Minh Khai"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                app:fontFamily="@font/open_sans_semibold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/activity_course_detail_detail_border1"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/icons8_calendar_5_52px_1">
+
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date:"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                app:fontFamily="@font/open_sans_semibold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/CourseOverview_UpdateDate"
+                                android:text="01/01/2021"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                app:fontFamily="@font/open_sans_semibold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="220.000 đ"
+                android:id="@+id/CourseOverview_Price"
+                android:textSize="35dp"
+                android:fontFamily="@font/anton"
+                android:layout_marginRight="5dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="220.000 đ"
+                android:id="@+id/CourseOverview_BasePrice"
+                android:textSize="30dp"
+                android:fontFamily="@font/anton"
+                android:textColor="#792727"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Thêm vào giỏ hàng"
+                    android:textAlignment="center"
+                    android:id="@+id/CourseOverview_AddToCartButton"
+                    android:background="@drawable/activity_course_detail_save_button"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans_bold"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="HỌC NGAY"
+                    android:textAlignment="center"
+                    android:id="@+id/CourseOverview_LearnNowBtn"
+                    android:background="@drawable/activity_course_detail_save_button"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans_bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="THAM GIA NGAY"
+                    android:textAlignment="center"
+                    android:id="@+id/CourseOverview_JoindNowBtn"
+                    android:background="@drawable/activity_course_detail_save_button"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans_bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Viết đánh giá"
+                    android:id="@+id/CourseOverview_WriteCommentButton"
+                    android:textColor="#3F51B5"
+                    android:textSize="12dp"
+                    android:background="#fff"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:background="@drawable/activity_course_detail_border_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans_bold"
+                />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nội dung phần mô tả !"
+                android:textSize="16dp"
+                android:id="@+id/CourseOverview_Description"
+                android:textColor="#2F3031"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:background="@drawable/activity_course_detail_border_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khóa học liên quan"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans_bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CourseOverview_RecommendCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:background="@drawable/activity_course_detail_border_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm đánh giá khóa học"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans_bold"
+                />
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/CourseOverview_Ratting"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="0dip"
+                    android:paddingLeft="0dp"
+                    android:rating="4.5"
+                    android:progressTint="@color/golden"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CourseOverview_TotalVote"
+                    android:text="(60)"
+                    android:textColor="#2F3031"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/activity_course_detail_border_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá của học viên"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans_bold"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/CourseOverview_Comments"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tl_gb"
+    android:layout_margin="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/CourseJoined_Lesson_Wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:id="@+id/LessonCreated__Number"
+                android:text="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:outlineSpotShadowColor="#050101"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+
+                    android:layout_margin="1dp"
+                    android:ellipsize="marquee"
+                    android:gravity="left"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    app:fontFamily="sans-serif-medium"
+                    android:id="@+id/LessonCreated__Title"
+                    android:text="Tên bài review"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:outlineSpotShadowColor="#050101"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tham gia: 2020-05-11"
+                        android:id="@+id/joinedAt"
+                        android:textSize="10dp"
+                        android:visibility="gone"
+                        android:textColor="#440E0E"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/icons8_documents_60px" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="document"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:id="@+id/CourseJoined_Lesson_Status"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-35dp"
+            >
+
+            <ImageView
+                android:id="@+id/LessonCreated_edit"
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icons8_edit_48px_1" />
+            <ImageView
+                android:id="@+id/LessonCreated_test"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icons8_ask_question_48px_1" />
+            <ImageView
+                android:id="@+id/LessonCreated_question"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icons8_ask_question_60px_2" />
+            <ImageView
+                android:id="@+id/LessonCreated_delete"
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icons8_delete_bin_100px_1" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
